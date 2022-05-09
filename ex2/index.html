@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/vapor/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+<br><br><br><br><br>
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p>Evaluation du cours PHP</p>
+    </blockquote>
+    <br><br>
+    <div class="container">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+    <form action="vote.php" method="post">
+        <input type="text" name="user" class="form-control" placeholder="Username" aria-label="Username"> 
+        <br><br>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" value="Bon" name="eval" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bon
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" value="Moyen" name="eval" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Moyen
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" value="Mauvais" name="eval" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Mauvais
+  </label>
+</div>
+<br><br>
+<button type="submit" name="b" class="btn btn-outline-primary">Voter</button>
+</form>
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
