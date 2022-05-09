@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/darkly/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="row g-3 needs-validation" novalidate action="reca.php" method="post" enctype="multipart/form-data">
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip01" class="form-label">Nom</label>
+          <input type="text" class="form-control" name="nom" id="validationTooltip01" value="" required placeholder="Votre nom ici">
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip02" class="form-label">Prenom</label>
+          <input type="text" class="form-control" name="prenom" id="validationTooltip02" value="" required placeholder="Votre prenom ici">
+        </div>
+        <div class="col-md-2 position-relative">
+          <label for="validationTooltip05" class="form-label">CIN scannee</label>
+          <input class="form-control" type="file" name="cin" placeholder="CIN scannee ici" aria-label="default input example">
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipUsername" class="form-label">Addresse</label>
+          <div class="input-group has-validation">
+              <textarea class="form-control" name="addresse" id="validationTooltipUsername" cols="10" rows="5" aria-describedby="validationTooltipUsernamePrepend" required placeholder="Tapez votre addresse"></textarea>
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip03" class="form-label">Quantite</label>
+          <input type="number" class="form-control" name="quantite" id="validationTooltip03" required placeholder="Entrer le nombre de sandwitchs">
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip04" class="form-label">Type de sandwitchs</label>
+          <select class="form-select" name="typesand" id="validationTooltip04" required>
+            <option selected disabled value="">Choisissez</option>
+            <option value="viande">Viande</option>
+            <option value="poulet">Poulet</option>
+            <option value="escalope">Escalope</option>
+          </select>
+        </div>
+        <div class="col-md-4 position-relative">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="ing1" value="harissa" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Harissa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="ing2" value="salade" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Salade
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="ing3" value="mayo" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Mayo
+                </label>
+              </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Valider</button>
+        </div>
+      </form>
+</body>
+</html>
